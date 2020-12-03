@@ -1,5 +1,5 @@
 # MovieRama app
-Workable - Assignment for the Frontend engineer position
+ReactJS movies list app implementing search / filter functionality
 
 ## Development
 ```
