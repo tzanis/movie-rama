@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="app" class="main">
+  <h1>~ <%= htmlWebpackPlugin.options.title %> ~</h1>
+  <div class="search-form">
+    <form id="search">
+      <input id="keyword" name="keyword" placeholder="Search Movies..." />
+    </form>
+  </div>
+  <div class="movie-list-container"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+.movie-list-item__details {
+  line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 20px;
+  overflow: hidden;
+  transition: max-height 3s;
+  word-break: break-all;
+
+  h4 {
+    color: #673737;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  iframe {
+    visibility: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  &--show {
+    padding-top: 15px;
+    max-height: 9999px;
+
+    iframe {
+      visibility: visible;
+    }
+  }
+}
+
+.movie-details__similar-movies {
+  color: #555;
+  flex-basis: 100%;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.movie-details {
+  &__loading {
+    width: 100%;
+    text-align: center;
+    margin-top: 3px;
+    font-size: 11px;
+    color: #666;
+  }
+
+  &__reviews {
+    flex-basis: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  &__review-item {
+    + .movie-details__review-item {
+      margin-top: 20px;
+    }
+  }
+
+  &__review-author {
+    color: #888888;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+
+  &__review-content {
+    color: #555;
+    padding-right: 50px;
+    max-width: 900px;
+
+    @media screen and (max-width: 680px) {
+      padding-right: 0;
+    }
+  }
+}
+
